@@ -1,3 +1,11 @@
+//
+//  main.cpp
+//  Course Project
+//
+//  Created by Niko Mitov on 5/8/17.
+//  Copyright © 2017 Niko Mitov. All rights reserved.
+//
+
 #include <iostream>
 #include "Core.h"
 

@@ -1,3 +1,11 @@
+//
+//  Core.h
+//  Course Project
+//
+//  Created by Niko Mitov on 5/8/17.
+//  Copyright © 2017 Niko Mitov. All rights reserved.
+//
+
 #ifndef Core_h
 #define Core_h
 
@@ -66,13 +74,13 @@ Core::Core(int userInputStackSize, bool customNumbers, bool createFile) {
     
     if (createFile == true) {
         // Check to see if there is already a file created with the memmory addresses
-        if (std::ifstream("data.txt")) {
-            std::remove("data.txt");
+        if (std::ifstream("/Users/nikomitov/Documents/Course Project/data.txt")) {
+            std::remove("/Users/nikomitov/Documents/Course Project/data.txt");
         }
         
         // Creates the new, fresh file for storing the new information
-        std::ofstream data("data.txt", std::ios::in);
-        data.open("data.txt");
+        std::ofstream data("/Users/nikomitov/Documents/Course Project/data.txt", std::ios::in);
+        data.open("/Users/nikomitov/Documents/Course Project/data.txt");
         
         // Checks if the file opened up correctly
         if (data.is_open() == true) {
@@ -186,4 +194,4 @@ void Core::popElement() {
     }
 }
 
-#endif
+#endif /* Core_h */
